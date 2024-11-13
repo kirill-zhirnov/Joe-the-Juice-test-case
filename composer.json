@@ -1,0 +1,25 @@
+{
+    "name": "kirill-zhirnov/test-case",
+    "description": "Joe-the-Juice",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kirill Zhirnov"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "ext-bcmath": "*"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.1",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-asserts": "*",
+        "squizlabs/php_codesniffer": "3.*"
+    }
+}

@@ -1,0 +1,10 @@
+services:
+  php:
+    build :
+      context: ./
+      dockerfile: ./.docker/php.Dockerfile
+      target: php-server
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8080:8080"
