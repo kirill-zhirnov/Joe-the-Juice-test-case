@@ -4,7 +4,7 @@ services:
       context: ./
       dockerfile: ./.docker/php.Dockerfile
       target: php-server
-    volumes:
-      - ./:/var/www/html
+#    volumes:
+#      - ./:/var/www/html
     ports:
       - "8080:8080"
