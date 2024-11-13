@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use App\Bank;
 use App\Account;
@@ -31,7 +32,7 @@ $bank
     ->addAccount($secondAccount)
 ;
 
-if (sizeof($bank->accounts) !== 2){
+if (sizeof($bank->accounts) !== 2) {
     throw new RuntimeException('Failed to assign accounts');
 }
 
